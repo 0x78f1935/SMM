@@ -4,7 +4,7 @@
 
 Settings is organised into titled cards: **Game & folders**, **Preferences**
 (one row per setting, each with its explanation on the left and its switch,
-dropdown or button on the right), the three optional **connection**
+dropdown or button on the right), **Accessibility**, the three optional **connection**
 cards side by side (GitHub, Nexus Mods, Google - each with a small
 *how to get one* expander), the **Download cache**, and **About &
 credits** at the bottom. (Restore points are not here - each profile lists its
@@ -47,6 +47,46 @@ like snow falling at Christmas, with more through the year. Purely decorative
 and never in the way; turn it off here if you'd rather not have the animations.
 (On a festive day a short greeting still appears as a banner across the top -
 that friendly hello is always there.)
+
+**Accessibility** has a card of its own, with five options that make the app
+easier to read and calmer to look at. Each applies the moment you set it, and
+is remembered for next time.
+
+**Text size.** Scales all the text in the app - *smaller (90%)*, *normal*,
+*larger*, *large* or *largest (150%)*. The rows, buttons and cards grow with the
+text rather than staying put and clipping it. You can also hold **Ctrl** and
+scroll your mouse wheel anywhere in the app to step through the same sizes,
+just like in a web browser.
+
+**Reduce motion.** Turns off the animations, the background slideshow and the
+seasonal effects, leaving everything in place but still. Until you touch this
+switch it follows the animation setting in Windows itself, so if you have
+already asked Windows for less movement, Simple Mods Manager is calm from the
+first start without your having to ask twice. Setting it here overrides that
+either way - so you can keep the seasonal effects even with the Windows setting
+on, if that is what you would rather have.
+
+**High contrast.** Brighter text, clearly visible outlines, and solid card
+backgrounds so a background image never sits behind the words you are reading.
+Text in this mode is held to the strictest of the common readability
+standards.
+
+**Underline links and thicken the focus outline.** Links stay underlined
+instead of only underlining when you point at them, so you can find them
+without relying on their colour, and the outline that follows the keyboard
+around the screen becomes thicker and easier to spot.
+
+**Colourblind-friendly colours.** Swaps the green, amber and red used for
+status so they stay clearly apart with red-green colour blindness - success
+moves from green to blue, warnings gain brightness, and errors move towards
+pink. Nothing else about the app changes.
+
+Whether or not you turn that last one on, status is never told by colour alone
+anywhere in the app: the profile health markers differ in **shape** (a filled
+circle ran fine, a hollow ring has not been launched yet, a square crashed),
+and warnings and errors carry a **symbol** as well as their colour. The
+colourblind palette makes that easier still, but the app is readable without
+it.
 
 **Profile order.** How your profiles are listed everywhere - the dashboard grid,
 the profile picker at the top, the launch menu and the wizard's *Install into*.
