@@ -7,6 +7,29 @@
   max-width: none;
 }
 
+/* Text size (the app's Settings > Accessibility option, and Ctrl+wheel).
+   The app stamps data-text-scale on this document's <html> because an iframe
+   is a document of its own and inherits nothing from the page around it.
+   Everything here is sized in rem from the root, so one font-size carries the
+   whole guide; 125% is the theme's own baseline, multiplied by the same steps
+   the app offers. Without this the guide alone would ignore the setting - the
+   one screen where the text is the entire point. */
+html[data-text-scale="90"] {
+  font-size: 112.5%;
+}
+html[data-text-scale="100"] {
+  font-size: 125%;
+}
+html[data-text-scale="110"] {
+  font-size: 137.5%;
+}
+html[data-text-scale="125"] {
+  font-size: 156.25%;
+}
+html[data-text-scale="150"] {
+  font-size: 187.5%;
+}
+
 /* Themed scrollbar (WebView2 / Chromium) to match the dark launcher look. */
 ::-webkit-scrollbar {
   width: 11px;

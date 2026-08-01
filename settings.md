@@ -56,7 +56,8 @@ is remembered for next time.
 *larger*, *large* or *largest (150%)*. The rows, buttons and cards grow with the
 text rather than staying put and clipping it. You can also hold **Ctrl** and
 scroll your mouse wheel anywhere in the app to step through the same sizes,
-just like in a web browser.
+just like in a web browser - including on this Docs page, which resizes with
+everything else.
 
 **Reduce motion.** Turns off the animations, the background slideshow and the
 seasonal effects, leaving everything in place but still. Until you touch this
