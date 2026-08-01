@@ -1,0 +1,30 @@
+/* Overrides for the SMM in-app Docs view (this site renders inside an iframe
+   in the app). The iframe is a separate document, so the app's own scrollbar
+   theming can't reach it - it must ship here. Palette matches smm/ui. */
+
+/* Use the full iframe width - Material caps content at ~61rem by default. */
+.md-grid {
+  max-width: none;
+}
+
+/* Themed scrollbar (WebView2 / Chromium) to match the dark launcher look. */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b3540; /* --border */
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2c8f55; /* --accent-dim */
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

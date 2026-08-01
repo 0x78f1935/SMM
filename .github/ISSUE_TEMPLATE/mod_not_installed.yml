@@ -1,0 +1,89 @@
+name: Mod installed in the wrong place
+description: A mod's files ended up somewhere they don't belong, or SMM couldn't work out where to put them.
+labels: ["mod-mapping"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Simple Mods Manager works out where a mod's files belong from the
+        archive's layout plus any install instructions it can find (the mod
+        page and readme files). When a mod still lands wrong, the details below
+        let us teach the app that mod's shape - every report improves the
+        automatic installer for everyone. Thank you!
+
+        **The files landed correctly but the mod misbehaves in-game?** Use
+        *Mod is broken or crashes the game* instead.
+  - type: input
+    id: mod
+    attributes:
+      label: Mod name + link to its page
+      placeholder: "2024 Lambo Revuelto - https://www.gta5-mods.com/vehicles/…"
+    validations:
+      required: true
+  - type: dropdown
+    id: storefront
+    attributes:
+      label: How did you install it?
+      options:
+        - Browsed & downloaded inside the app (gta5-mods.com)
+        - Browsed & downloaded inside the app (Nexus Mods)
+        - GitHub release link
+        - Google Drive link
+        - Direct download link
+        - Scanned from my Downloads folder
+        - Came with an imported profile
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: landed
+    attributes:
+      label: Where did the files end up?
+      description: >
+        Open the profile, find the mod under **Installed mods** and click
+        **Show file(s)** on its card - that lists every installed file. Copy
+        the wrong-looking paths here (or a screenshot - drag it into the box).
+      placeholder: |
+        scripts/Copy to scripts folder/Radar/RadarZoom.ini
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Where should they have gone?
+      description: If the mod's page or readme says where the files belong, copy that here.
+      placeholder: |
+        scripts/Radar/RadarZoom.ini
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: instructions
+    attributes:
+      label: Does the mod come with install instructions?
+      options:
+        - "No instructions anywhere"
+        - "Yes - on its download page"
+        - "Yes - in a readme inside the download"
+        - "Yes - both"
+        - "Not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: card-notes
+    attributes:
+      label: What did the mod's card say? (optional)
+      description: >
+        During install, the mod's card on the Scan step sometimes shows notes
+        or warnings (readme notes, compatibility notes). If it did, copy them
+        here - they tell us what the app already understood.
+      render: text
+  - type: input
+    id: smm-version
+    attributes:
+      label: Simple Mods Manager version
+      description: Shown in **Settings → About & credits** and under the SMM logo.
+      placeholder: "1.0.0"
+    validations:
+      required: true

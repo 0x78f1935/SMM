@@ -1,0 +1,167 @@
+name: Mod is broken or crashes the game
+description: A mod installed fine but doesn't work in-game, or the game crashes because of it.
+labels: ["mod-broken"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most mods on gta5-mods and Nexus were built for the original GTA V, and
+        Simple Mods Manager rebuilds them for Enhanced during installation. That
+        conversion is where the interesting bugs live - so a report like this is
+        genuinely useful, even when the fault turns out to be the mod's own.
+
+        Two things worth trying first, because they solve a good share of these:
+
+        1. **Launch twice.** The very first launch after installing add-on
+           content prepares that content; some mods only appear on the second.
+        2. **Test the mod on its own.** Make a fresh profile, install just this
+           mod, and see whether it still misbehaves. That single answer tells us
+           whether it's the mod or a clash with something else.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before reporting
+      options:
+        - label: I searched the existing issues and didn't find the same mod.
+          required: true
+        - label: The mod's files did install - this isn't about them landing in the wrong place.
+          required: true
+        - label: I checked the mod's own page/comments to see whether it is known to be broken on Enhanced.
+          required: true
+  - type: input
+    id: mod
+    attributes:
+      label: Mod name + link to its page
+      placeholder: "2014 McLaren P1 [Add-On] - https://www.gta5-mods.com/vehicles/…"
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Which version of the mod?
+      description: The file or version you downloaded, as the mod page names it.
+      placeholder: "V2 (Add-On/Replace)"
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What goes wrong?
+      options:
+        - The game crashes or closes
+        - The game never finishes loading (black screen, or it hangs)
+        - The mod simply isn't there in-game
+        - The mod is there but looks wrong (missing parts, wrong textures, invisible)
+        - The mod is there but behaves wrong (no collision, physics, controls)
+        - The game runs but is badly slower with it installed
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: when
+    attributes:
+      label: When does it go wrong?
+      options:
+        - While the game is loading, before I reach the map
+        - As soon as I spawn or load into the world
+        - When I spawn this specific vehicle/ped/object
+        - When I drive, use or interact with it
+        - Randomly, minutes into play
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe it in your own words
+      description: What you did, what happened, and what you expected instead.
+      placeholder: I spawned the car with a trainer and the game closed immediately…
+    validations:
+      required: true
+  - type: dropdown
+    id: alone
+    attributes:
+      label: Does it still happen with only this mod installed?
+      description: A fresh profile with just this mod (plus the dependencies SMM installs by itself) is the single most useful test you can run.
+      options:
+        - "Yes - it happens with only this mod installed"
+        - "No - on its own it works, so something else in my profile clashes with it"
+        - "I haven't tried that yet"
+    validations:
+      required: true
+  - type: dropdown
+    id: converted
+    attributes:
+      label: Did SMM convert this mod?
+      description: The mod's card on the **Scan** step says so, and the profile's mod card shows it afterwards - look for a Legacy-to-Enhanced or add-on-pack conversion note.
+      options:
+        - "Yes - SMM said it converted it (Legacy to Enhanced, or an add-on pack)"
+        - "No - it was already an Enhanced mod"
+        - "Not sure"
+  - type: dropdown
+    id: warnings
+    attributes:
+      label: Did the Scan step warn you about anything?
+      description: Notes and warnings on the mod's card during install - missing requirements, an incomplete pack, a Legacy-only file.
+      options:
+        - "No warnings"
+        - "Yes - there were warnings (pasted below)"
+        - "I don't remember"
+  - type: textarea
+    id: warning-text
+    attributes:
+      label: What did those warnings say?
+      description: Copy them here, or drag in a screenshot of the mod's card.
+      render: text
+  - type: textarea
+    id: diagnosis
+    attributes:
+      label: What does Diagnose say?
+      description: >
+        Open the **Logs** tab and press **Diagnose**. It names the likely
+        culprit in plain language, and when the game crashed hard it reads the
+        crash dump and says what faulted and which component was at fault. Copy
+        the result here.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Logs and crash dump (drag files into this box)
+      description: >
+        Drag any of these in and GitHub uploads them: `SmmLoader.log`,
+        `SmmHandler.log`, `ScriptHookVDotNet.log`, and `SMMCrash.dmp` if the
+        game crashed. The **Logs** tab lists each of them with its full path and
+        a copy button. For a crash we can't reproduce, turn on
+        **Settings → Diagnostics**, crash it once more, and attach the logs from
+        that run - they carry far more detail.
+  - type: input
+    id: smm-version
+    attributes:
+      label: Simple Mods Manager version
+      description: Shown in **Settings → About & credits** and under the SMM logo.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: GTA V Enhanced game build
+      description: Shown in **Settings**, on the game folder line.
+      placeholder: "1.0.1158.13"
+    validations:
+      required: true
+  - type: dropdown
+    id: handler
+    attributes:
+      label: Which script handler does the profile use?
+      description: Shown on the **ScriptHookV card** in your profile. Simple Mods Manager installs its own handler (SMH) by default; the switch on the card replaces it with Alexander Blade's original ScriptHookV.
+      options:
+        - "SMM Handler - SMH (the default)"
+        - "Original ScriptHookV (I used the switch on the card)"
+        - "Not sure"
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: What else is in the profile? (optional)
+      description: If it only breaks alongside other mods, list them - the profile's **Installed mods** panel is the quickest place to read them off.
+      render: text

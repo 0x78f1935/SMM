@@ -1,0 +1,66 @@
+name: Feature request
+description: Suggest an idea or improvement for Simple Mods Manager.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping shape Simple Mods Manager! Describe your idea in
+        your own words - no technical knowledge needed. The most useful part is
+        the *why*: what you were trying to do when you wished the app worked
+        differently.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before requesting
+      options:
+        - label: I searched the existing issues and didn't find the same request.
+          required: true
+        - label: I checked the user guide's "What SMM can & can't do" page - this isn't already possible, and it isn't listed there as a hard limit.
+          required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app is this about?
+      options:
+        - Browsing or downloading mods
+        - The basket (collecting mods, installing them together)
+        - Installing mods (scan, conflicts, install)
+        - Support for a mod format or layout SMM doesn't handle yet
+        - Legacy-to-Enhanced conversion
+        - Profiles (organizing, ordering, switching, sharing)
+        - Editing a mod's config files
+        - Launching or playing the game
+        - Benchmarks
+        - Updates & dependencies
+        - Logs & diagnosis
+        - Settings & customization
+        - The in-game loading screen
+        - Something new entirely
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: The situation that made you want this - what is painful, slow or missing today.
+      placeholder: I'm always frustrated when…
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What would you like to happen?
+      description: Describe the feature as if it already existed - what you would see and click.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you handle it today?
+      description: Any workaround you use now, or other ways the app could solve it.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Optional - examples, screenshots or links that show what you mean (drag images into this box to attach them).

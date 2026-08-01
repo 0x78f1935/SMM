@@ -1,0 +1,146 @@
+name: Bug report
+description: Something in the Simple Mods Manager app doesn't work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a problem - reports like this
+        are how Simple Mods Manager gets better for everyone.
+
+        You don't need any technical knowledge to fill this in. Everything we
+        ask for can be found inside the app: the version is in
+        **Settings → About & credits**, and the **Logs** tab (with its
+        **Diagnose** button) gathers everything that happened on your last
+        game launch.
+
+        **Is a specific mod the problem rather than the app?** Use
+        *Mod installed in the wrong place* or *Mod is broken or crashes the
+        game* instead - those forms ask the right questions and get fixed
+        faster.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before reporting
+      options:
+        - label: I searched the existing issues and didn't find the same problem.
+          required: true
+        - label: I'm playing GTA V **Enhanced** (Simple Mods Manager doesn't manage the older "Legacy" edition).
+          required: true
+        - label: I'm on the latest release (Settings → About & credits shows an update button when I'm not).
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem in your own words - and what you expected to happen instead.
+      placeholder: When I…, Simple Mods Manager… but I expected…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen too?
+      description: The steps you took, in order. If it only happened once, describe what you were doing at the time.
+      placeholder: |
+        1. Open…
+        2. Click…
+        3. Then this happens…
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app does it happen?
+      options:
+        - Browsing or downloading mods
+        - The basket (collecting mods, installing them together)
+        - Installing a mod (scan, conflicts, install)
+        - Reinstalling or updating a mod
+        - Profiles (creating, switching, ordering, import/export)
+        - Editing a mod's config files
+        - Launching or playing the game
+        - Updates & dependencies
+        - Logs & diagnosis
+        - Settings
+        - The guided tour
+        - The app itself (startup, window, display, self-update)
+        - Somewhere else / not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Does the game itself misbehave?
+      options:
+        - "No - the problem is inside the Simple Mods Manager app"
+        - "The game crashes or closes unexpectedly"
+        - "The game runs, but mods don't show up or don't work"
+        - "Not sure"
+    validations:
+      required: true
+  - type: input
+    id: smm-version
+    attributes:
+      label: Simple Mods Manager version
+      description: Shown in **Settings → About & credits** and under the SMM logo.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: GTA V Enhanced game build
+      description: Shown in **Settings**, on the game folder line.
+      placeholder: "1.0.1158.13"
+  - type: dropdown
+    id: handler
+    attributes:
+      label: Which script handler does the profile use? (for in-game problems)
+      description: Shown on the **ScriptHookV card** in your profile. Simple Mods Manager installs its own handler (SMH) by default; the switch on the card replaces it with Alexander Blade's original ScriptHookV.
+      options:
+        - "SMM Handler - SMH (the default)"
+        - "Original ScriptHookV (I used the switch on the card)"
+        - "Not sure / not relevant"
+  - type: dropdown
+    id: storefront
+    attributes:
+      label: Where did the mod come from? (if the problem involves a specific mod)
+      options:
+        - Not about a specific mod
+        - gta5-mods.com
+        - Nexus Mods
+        - GitHub releases
+        - Google Drive link
+        - Direct download link
+        - Scanned from my Downloads folder
+        - Came with an imported profile
+        - Other
+  - type: input
+    id: mod
+    attributes:
+      label: Mod name + link (if the problem involves a specific mod)
+      placeholder: "Rampage Trainer - https://…"
+  - type: textarea
+    id: diagnosis
+    attributes:
+      label: What does Diagnose say?
+      description: >
+        Open the **Logs** tab and press **Diagnose** - it explains in plain
+        language what it found. Copy its result here. If the app itself
+        misbehaved, you can also attach the app's own log: drag the file
+        `SimpleModsManager_data\work\logs\smm.log` (the folder sits next to
+        SimpleModsManager.exe) into this text box and GitHub uploads it.
+      render: text
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Logs and crash dump (drag files into this box)
+      description: >
+        Drag any of these in and GitHub uploads them - they are the fastest
+        route to a fix: `SmmLoader.log`, `SmmHandler.log`,
+        `ScriptHookVDotNet.log`, and `SMMCrash.dmp` if the game crashed. The
+        **Logs** tab lists every one of them with its full path and a copy
+        button, so you can find them on disk.
+        If a maintainer asks for more, turn on **Settings → Diagnostics**,
+        reproduce the problem once, and attach the logs from that run.

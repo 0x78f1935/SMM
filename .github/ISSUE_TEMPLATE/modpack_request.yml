@@ -1,0 +1,127 @@
+name: Suggest a mod for the SMM modpack
+description: Propose a mod for the curated modpack shipped alongside Simple Mods Manager.
+labels: ["modpack"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The modpack is a small, curated set of mods that are known to work
+        together on GTA V Enhanced - a good starting point rather than an
+        everything-bin. Suggestions are welcome, and the bar is deliberately
+        high: a mod has to work on the current build, get along with the rest of
+        the pack, and be something its author is happy to see recommended.
+
+        This form is *not* the place to report a broken mod - use *Mod is broken
+        or crashes the game* for that. If you just want a mod recorded as
+        working on Enhanced without it joining the pack, use *Report a working
+        mod* instead.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before suggesting
+      options:
+        - label: I checked the modpack list and this mod isn't already in it.
+          required: true
+        - label: I searched the existing issues and nobody has suggested it yet.
+          required: true
+        - label: I have actually used this mod on GTA V **Enhanced** myself.
+          required: true
+  - type: input
+    id: mod
+    attributes:
+      label: Mod name + link to its page
+      placeholder: "2024 Lamborghini Revuelto - https://www.gta5-mods.com/vehicles/…"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Who made it?
+      description: The author name as their mod page gives it - they get the credit in the pack list and on the in-game loading screen.
+      placeholder: "South East Customs"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Which version did you use?
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: What kind of mod is it?
+      options:
+        - Vehicle
+        - Map or world
+        - Graphics or visuals
+        - Script or gameplay
+        - Trainer or tool
+        - Sound
+        - Ped or clothing
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it belong in the pack?
+      description: What it adds that nothing already in the pack does, and who would enjoy it. Be concrete - "it's good" is hard to act on.
+      placeholder: The pack has no…, and this fills that because…
+    validations:
+      required: true
+  - type: dropdown
+    id: tested
+    attributes:
+      label: How thoroughly have you tested it on Enhanced?
+      options:
+        - "Installed through SMM and played with it for hours - no problems"
+        - "Installed through SMM and it loads fine, but I haven't played much"
+        - "Installed it by hand, not through SMM"
+        - "I haven't tested it, I've only seen it recommended"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Which game build did you test on?
+      description: Shown in **Settings**, on the game folder line.
+      placeholder: "1.0.1158.13"
+  - type: dropdown
+    id: conversion
+    attributes:
+      label: Did SMM have to convert it?
+      description: The mod's card on the **Scan** step says so - a Legacy-to-Enhanced rebuild or an add-on-pack conversion.
+      options:
+        - "No - it shipped an Enhanced version"
+        - "Yes - SMM converted it and it works"
+        - "Yes - SMM converted it, with warnings"
+        - "Not sure"
+  - type: dropdown
+    id: permission
+    attributes:
+      label: What does the mod say about redistribution?
+      description: >
+        The pack is a *list* - SMM downloads each mod from its own page rather
+        than re-hosting it, so an author's files are never copied. Even so, an
+        author who has asked not to be bundled or recommended is respected, so
+        it helps to know what their page says.
+      options:
+        - "Its page places no restrictions on being recommended or linked"
+        - "Its page asks for credit, which the pack gives"
+        - "Its page forbids redistribution or reuploading (linking should still be fine)"
+        - "Its page says nothing about it"
+        - "Not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Anything it clashes with? (optional)
+      description: Mods it is known not to get along with, or requirements it brings along (a specific script handler, a gameconfig, another mod).
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else? (optional)
+      description: Screenshots, a video, or notes about how it plays. Drag images into this box to attach them.

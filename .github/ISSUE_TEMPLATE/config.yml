@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide & documentation
+    url: https://github.com/0x78f1935/SMM#user-guide
+    about: Start with the user guide (also built into the app under the Docs tab) - many questions are answered there.
+  - name: Download the latest release
+    url: https://github.com/0x78f1935/SMM/releases/latest
+    about: Problems are often already fixed - check you are on the newest build before reporting one.

@@ -1,0 +1,57 @@
+Simple Mods Manager - License
+=============================
+
+Copyright (c) 2026 undefined418. All rights reserved.
+
+This license covers everything in this repository - the Simple Mods Manager
+engine and UI, the SMM Loader (loader/), the SMM Handler (handler/), the
+documentation and the build tooling - except bundled third-party components,
+which keep their own licenses.
+
+
+1. What you may do today
+------------------------
+
+You may use Simple Mods Manager for personal, non-commercial purposes through
+the official releases, which are published at https://github.com/0x78f1935/SMM
+and are free to download and use. All other rights are reserved. In
+particular, you may not read the source code or build it, redistribute the
+source code or binaries built from it, publish modified versions, or reuse
+any part of the code in other projects.
+
+
+2. The community purchase pledge
+--------------------------------
+
+When cumulative community support through Buy Me a Coffee
+(https://buymeacoffee.com/undefined418) reaches EUR 75,000, the author will
+relicense this entire repository under the GNU General Public License,
+version 3 (GPLv3) - permanently and irrevocably. In plain words: the
+community collectively buys the source code, and once bought, it belongs to
+everyone.
+
+EUR 75,000 is simply the price the author will sell it for. What that buys,
+counted rather than estimated: roughly 49,000 lines of Python across 98
+engine modules, an original native loader and an original
+ScriptHookV-compatible script handler (the SMM Handler) together comprising
+roughly 26,000 lines of C++, roughly 10,500 lines of UI code,
+2,475 automated tests, and capabilities no other public tool ships
+(Legacy-to-Enhanced conversion of models, textures and vehicle fragments,
+OIV-to-SML package translation, the original loader and script handler
+themselves). Every one of those figures is checkable in the repository
+once it is yours.
+
+GPLv3 is chosen deliberately: its copyleft means that once the community has
+bought the code, nobody can take a fork closed-source and resell the work -
+it stays open for everyone who paid for it, and everyone after them.
+
+
+3. No warranty
+--------------
+
+This software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. In no event shall the
+author be liable for any claim, damages or other liability arising from the
+use of the software. Modding a game can violate its terms of service; you
+use this software at your own risk.
