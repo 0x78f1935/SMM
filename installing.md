@@ -159,9 +159,13 @@ option to see its preview image.
 
 The line under the ".oiv packages" heading always tells you what that particular
 checklist is asking - pick one per group, tick what you want, or "all optional".
-And when a mod gives two packages the **same name** (Long Travel Bus Service ships
-two, both called that), Simple Mods Manager adds the folder each came from -
-*Long Travel Bus Service - LTBS LCD signs* - so you can tell them apart. Packages
+And when a mod gives two packages the **same name** - which happens most often when
+it ships one package per game edition - Simple Mods Manager adds whatever tells them
+apart, in brackets: the edition when that is the difference (*Cops On Patrol
+(Enhanced)* and *Cops On Patrol (Legacy)*, with the Enhanced one already picked for
+you and the group headed **Game edition**), otherwise the folder each came from
+(*Weather Tweaks (Night)* and *Weather Tweaks (Day)*). A name that was already
+unique is left exactly as the author wrote it. Packages
 the author put in a conditional folder show the same yellow **optional** badge as
 files do, and start unticked.
 
