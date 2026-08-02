@@ -179,7 +179,10 @@ off unless a maintainer asks, then: turn it on, reproduce the problem, send the
 logs.
 
 **SMM updates itself.** The startup version check also asks GitHub for the
-newest released SMM (politely, once - same as the mod checks). When a newer
+newest released SMM - and unlike the mod and dependency checks, that one is made
+**every time you start the app**, so a new release shows up straight away instead
+of whenever the shared six-hour check next comes round. It is a single request.
+When a newer
 release exists, a small **⬆ v… available** pill (naming the new version) appears next to the version in
 the top-left - and a full-width banner across the top of every screen - with an
 **Update & restart** button: SMM downloads the new version, verifies it, swaps
