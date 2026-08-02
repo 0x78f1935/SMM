@@ -14,6 +14,12 @@ A red profile does **not** stay red after you act on it: installing,
 uninstalling or updating anything in it turns the dot orange ("changed since
 the crash") - the next launch decides whether it goes green again.
 
+The last of those red reasons - *the game exited within seconds of starting* - is
+the only one with no crash report behind it: it is worked out from how long the
+game ran. So it gives way to anything that contradicts it. If your game is
+running while the dot is being worked out, the profile goes orange and waits for
+the game to close rather than claiming a crash you did not have.
+
 A card can also carry an **older SMM** badge: the profile's mods were installed
 by an earlier version of Simple Mods Manager, from before the current
 mod-conversion fixes. Everything still works exactly as it did - the badge just
