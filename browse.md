@@ -48,9 +48,20 @@ homepages…) opens in your normal browser, never inside the app.
 The first time you open the Nexus tile, SMM asks for your **personal API
 key** - you find it on your Nexus Mods account's API keys page (the modal
 links straight to it). The key is stored in SMM's data folder on your
-machine and only ever sent to nexusmods.com. Once connected you can search
-and browse GTA V mods with a **category** filter (the site's own categories -
-Vehicles, Scripts, Maps, …), sort options (latest added, recently updated,
+machine and only ever sent to nexusmods.com.
+
+**Enhanced or Legacy?** Nexus Mods keeps the two GTA V editions as *two separate
+games*, each with its own mods - something on one is simply not listed on the
+other. So the next thing SMM asks is which of them to open: **GTA V Enhanced**
+or **GTA V Legacy**. It only asks once and remembers your answer; after that the
+tile goes straight in. To switch, use the **Store** dropdown at the left of the
+browse bar - it swaps catalogues immediately - or **Settings → Nexus Mods
+store**. Enhanced is pre-selected, because that is the game Simple Mods Manager
+manages; Legacy is worth a look too, since most of the scene is still there and
+SMM converts Legacy content when it installs it.
+
+Beside the store you get a **category** filter (the site's own categories, which
+differ between the two stores), sort options (latest added, recently updated,
 most endorsed, most downloaded) and an adult-content toggle.
 
 Downloading depends on your account type:
@@ -189,10 +200,20 @@ itself, so it quietly leaves them off the list.
 often an **Enhanced** version for GTA V Enhanced and an older **Legacy** version.
 The Legacy one usually loads but then **crashes when you use it**. The mod's own
 big Download button frequently points at the Legacy
-file, so the manager instead shows a **Version** dropdown and **defaults to the
-latest Enhanced version** for you. You can still pick a different version if you
-really want to - you'll get a heads-up if it's a Legacy one. When a mod only has a
-Legacy version, it downloads but warns you it may not work on Enhanced.
+file, so the manager instead shows a **Version** dropdown and picks for you: **the
+newest version that isn't marked Legacy**. An Enhanced version still wins over a
+newer Legacy one - that's the whole point - but an *Enhanced label* no longer beats
+a newer release that simply doesn't say which edition it's for. That matters more
+than it sounds: plenty of authors labelled their versions while Enhanced support
+was arriving and then stopped bothering, and the old rule left you stuck on the
+version where the labelling started. If the newest version is unlabelled and an
+older one does say Enhanced, Simple Mods Manager installs the newest one and
+**tells you which the Enhanced one was**, so you can switch if it misbehaves.
+
+You can still pick any version by hand - you'll get a heads-up if it's a Legacy
+one. When a mod only has a Legacy version, it downloads but warns you it may not
+work on Enhanced. And if you'd rather always have the newest file whatever it is
+labelled, **Settings → Which version to install** has that option.
 
 **A version that isn't downloadable yet.** gta5-mods lists a newly uploaded file
 before a moderator has approved it - you can see its name, size and date, but the

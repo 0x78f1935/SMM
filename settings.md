@@ -38,9 +38,20 @@ the game **closes by itself** once it has handed over the keys and shows a small
 more and your mods load from that run. (When the profile does include add-on DLC
 packs, SMM instead loads them during that same first launch, so there's no restart.)
 
-**Install debug files.** Off by default. Mods sometimes ship `.pdb` debug symbol
-files that do nothing at runtime; Simple Mods Manager skips them unless you turn
-this on (useful only if you develop mods).
+**Nexus Mods store.** Nexus keeps **GTA V Enhanced** and **GTA V Legacy** as two
+separate games, each with its own mods - something listed on one is not listed on
+the other. This picks which of them Browse opens. Simple Mods Manager asks you once,
+the first time you open the Nexus tile, and remembers the answer; this row and the
+**Store** dropdown in the Browse bar both change it afterwards.
+
+**Which version to install.** Some mod pages list several versions and label them
+*Enhanced* or *Legacy*. By default Simple Mods Manager installs **the newest one
+that isn't marked Legacy** - so an Enhanced build still wins over a newer Legacy
+one, but an old *Enhanced* label doesn't beat a newer release that simply doesn't
+say. Switch it to **Always install the newest version** if you'd rather have the
+latest file whatever it's labelled. Either way you can pick a version by hand on
+the mod's page, and dependencies like Script Hook V .NET always take their Enhanced
+build - a Legacy one wouldn't load at all.
 
 **Festive seasonal effects.** On by default - the animated seasonal touches,
 like snow falling at Christmas, with more through the year. Purely decorative
@@ -170,6 +181,17 @@ row has a ✕ to remove just that download. Removing a cached download never
 touches your installed mods; it only means SMM would fetch that file again the
 next time a profile needs it.
 
+## Development
+
+The last card before **About & credits** holds the three switches that exist for
+*building* Simple Mods Manager and for reporting bugs against it. None of them
+change how the game plays, and all three are off by default - if you're not
+chasing a problem, there's nothing here for you.
+
+**Install debug files.** Mods sometimes ship `.pdb` debug symbol files that do
+nothing at runtime; Simple Mods Manager skips them unless you turn this on (useful
+only if you develop mods).
+
 **Diagnostics (leave off).** One switch turns on everything that helps a bug
 report - the loader's file-call trace, graphics probe and crash dump, plus the
 handler's exception tracer. It costs performance and makes the logs much
@@ -177,6 +199,12 @@ bigger, and the normal logs already contain everything a routine report needs
 (versions, your game build, the mods served, which plugins loaded) - so keep it
 off unless a maintainer asks, then: turn it on, reproduce the problem, send the
 logs.
+
+**Developer bridge.** Lets Simple Mods Manager's own development tools read and
+control the game while it runs, over a private connection on this PC - it is for
+building and testing SMM itself. Single player only. While it is on, the game will
+not pause when you click away from it (it can't answer while paused); turning it
+off restores that.
 
 **SMM updates itself.** The startup version check also asks GitHub for the
 newest released SMM - and unlike the mod and dependency checks, that one is made
