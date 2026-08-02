@@ -10,6 +10,12 @@ Everything lives in the SimpleModsManager_data folder next to the executable:
 profiles, backups, restore points, settings, logs. The whole setup is
 portable - move the exe together with that folder and nothing is lost.
 
+The one exception is a working folder Windows gives every app for temporary
+files, where SMM unpacks itself the first time each version runs so later
+starts are quick. It holds nothing of yours, and SMM now clears out the copies
+left by older versions every time it starts - that folder used to keep growing
+with every update.
+
 **How do I share a profile with a friend?**
 Open the profile and press **Export**. That writes a single `.smmprofile` file
 - a **recipe** of your profile: which mods it uses and where they came from,
