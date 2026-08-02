@@ -18,6 +18,12 @@ you pick a different folder for that one scan (say, the dedicated folder you
 just downloaded NaturalVision into) without touching the saved setting; *Use
 saved folder* switches back.
 
+**Two folders are never treated as mods**, and the scan notes say so when it
+meets them: Simple Mods Manager's own `SimpleModsManager_data` folder, and your
+game folder. Both are easy to end up scanning by accident - the data folder sits
+next to the program, so keeping the program *in* your downloads folder puts it
+right in the middle of everything being scanned - and neither one is a mod.
+
 **Choose exactly what installs.** The Install step groups the plan by folder,
 with a checkbox on every file and every folder. Untick anything you don't want
 and it won't be installed. This is handy for mods that ship files for several
