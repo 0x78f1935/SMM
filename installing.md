@@ -282,7 +282,13 @@ Readme install instructions are followed even when they're written casually,
 so files a mod's author says to drop in a specific place end up exactly
 there. That includes the way such packages write a location -
 `Mods / update / update.rpf / x64 / data / metadata`, spaces and all - and
-readmes tucked away in a wrapper folder beside the actual mod files. Some authors
+readmes tucked away in a wrapper folder beside the actual mod files, readmes
+written as a **web page** rather than plain text, and destinations written on
+their own line under a colon. If a mod's readme turns out to be nothing but a
+link to the author's documentation site, Simple Mods Manager follows that link
+once to read the instructions there - it only does so when the shipped readme
+says nothing itself, and if the site can't be reached the install simply carries
+on without it. Some authors
 also ship their files under a `platform` folder, which is the game's own name for
 part of `update.rpf`; Simple Mods Manager checks that against your real game
 files and, when it matches, places them for you. And re-installing or updating a mod never conflicts with its own
