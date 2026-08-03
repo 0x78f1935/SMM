@@ -258,6 +258,17 @@ them), but the operations that rework the whole game folder - switching
 profiles, restoring a restore point, importing a profile - still hold a
 progress window while they run, so nothing can interfere halfway.
 
+While something is writing to your game folder, the **profile picker locks** -
+switching then would change the same files underneath it. Hover it to see what it
+is waiting for; it unlocks by itself the moment that finishes, and you don't have
+to do anything. Scanning your downloads folder does *not* lock it, since that only
+reads. If you try to switch from a profile card at that moment, you get a note
+saying what is running rather than a switch that appears to do nothing.
+
+If Simple Mods Manager says **GTA V is running** when you're sure you closed it,
+the game has most likely left a process behind after a crash. The message has a
+**Stop the game** button that clears it; after that the switch goes through.
+
 That window has **two bars**: the top one says which step is running, the one
 underneath says what it's working on right now - the file being saved, the
 archive being rebuilt. Switching a big profile genuinely takes a while (every
