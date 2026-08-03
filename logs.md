@@ -40,6 +40,20 @@ per-mod logs, the Rockstar launcher and crash dumps:
   component was at fault - the game engine, your graphics driver, SMM itself, or a specific
   **mod** (named), so you know exactly what to turn off or update.
 
+Diagnose is careful about **what a freeze actually was**. Scripts take turns, so
+one that holds on to the game stops everything - but plenty of pauses are just a
+mod loading a lot of world at once, and those end by themselves. A freeze the game
+recovered from is reported as a passing hiccup rather than a crash, with what the
+script was busy doing; only one the game never came back from is treated as a
+fault. And when the script that stopped responding is a .NET mod, the finding
+points at the mods the .NET runtime was running rather than at the runtime itself -
+that runs every .NET mod you have, so naming it tells you nothing you can act on.
+
+When the **game** gives up and closes itself, it leaves its own reason behind
+before it goes. Diagnose reads that too, and says what the code means in plain
+language - for example that it failed to unpack something it was loading, which
+points at recently added map, interior or vehicle content rather than at a script.
+
 Some crashes leave no trace in the game's own logs - the game simply
 disappears while loading. Simple Mods Manager also checks the places
 **Windows** records crashes (Windows Error Reporting and its crash-dump

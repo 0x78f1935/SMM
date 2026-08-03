@@ -31,6 +31,12 @@ below). It's a plain JSON object that maps **a file in your archive** to
   written in Simple Mods Loader form:
     - a game-root file - `dinput8.dll`, `MyTrainer.asi`;
     - a script or its config - `scripts/MyTrainer.dll`, `scripts/MyTrainer.ini`;
+    - a **native** library your `.asi` links against - the game root, never
+      `scripts/`: Windows resolves a plugin's imports from the game folder, so a
+      helper library placed in `scripts/` leaves your plugin unable to load. SMM
+      works this out for itself by reading the file (a .NET assembly goes to
+      `scripts/`, a native one to the game root), so you only need to list it if
+      you want to be explicit;
     - content **inside** an archive - `mods/update/update.rpf/<path inside the rpf>`;
     - a whole add-on pack - `mods/update/x64/dlcpacks/<yourpack>/dlc.rpf`.
 
