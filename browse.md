@@ -1,15 +1,36 @@
 # Browsing & downloading
 
-The Browse tab opens on a set of **storefront tiles**: gta5-mods.com,
-Nexus Mods, **Google Drive**, **GitHub releases** and **Direct link**. Click a
+The Browse tab opens on a set of **storefront tiles**. Alongside gta5-mods.com
+and Nexus Mods there are seven more mod sites you can browse and install from
+without leaving the app - **GTAinside**, **GTA5Mod.net**, **GTA5 Mod Hub**,
+**Mod-Hub**, **LibertyCity**, **ModsHost** and **GTAall** - plus three paste
+tiles: **Google Drive**, **GitHub releases** and **Direct link**. Click a
 tile to enter that store; the **‹ Stores** button brings you back. The Google
 Drive, GitHub and Direct-link tiles are different - they open a paste prompt
 instead of a store (see below).
 
-![The Browse tab showing five storefront tiles: gta5-mods.com, Nexus Mods (marked API key required), Google Drive, GitHub releases and Direct link.](img/SMM_STOREFRONTS.webp)
+![The Browse tab showing the storefront tiles, including gta5-mods.com and Nexus Mods (marked API key required).](img/SMM_STOREFRONTS.webp)
 
 *Nexus Mods is marked **API key required** - it needs your own free key once,
 and the app walks you through it.*
+
+**Which sites are up right now.** When Simple Mods Manager starts it quietly
+checks each mod site once and each tile shows a small **● Online** or
+**● Unreachable** chip, so you can tell at a glance which stores are answering
+before you open one. The chip only informs - you can still click an
+"unreachable" tile and try it (the check can be momentary).
+
+**A note on game editions.** gta5-mods.com and Nexus clearly separate GTA V
+Enhanced content from the older Legacy version, but most of the other sites
+don't say which edition a file is for. When a site doesn't, Simple Mods
+Manager reminds you to check the mod's own description before installing - a
+Legacy file usually loads but can crash GTA V Enhanced when you use it.
+
+**Some sites open through the app's own browser.** A few stores only answer
+real web browsers, so Simple Mods Manager reaches them with its built-in
+browser instead of a plain connection. You don't have to do anything - browse
+and install from them like any other store; downloads from those sites can
+just take an extra moment while the site's check clears.
 
 Inside gta5-mods.com you can search or browse in grid or list view, with a
 real page navigator (also on the featured page) and filters that run on the
@@ -99,7 +120,7 @@ page, a tool published as a GitHub release file. The **🔗 Direct link** tile
 takes a **direct download link** to the archive itself: a link ending in
 `.zip`, `.rar`, `.7z` or `.oiv` (on most sites: right-click the download
 button and copy the link), or a site's download button link that redirects to
-the file - gta5mod.net's `download-mod` links, for example. Either way SMM
+the file. Either way SMM
 checks that what the server actually sends is a real archive, never a web
 page. SMM downloads it, virus-scans it like every other
 install, and adds it to the **📥 install queue** - open the queue to run the
