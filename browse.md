@@ -1,9 +1,9 @@
 # Browsing & downloading
 
 The Browse tab opens on a set of **storefront tiles**. Alongside gta5-mods.com
-and Nexus Mods there are six more mod sites you can browse and install from
-without leaving the app - **GTAinside**, **GTA5Mod.net**, **GTA5 Mod Hub**,
-**Mod-Hub**, **LibertyCity** and **GTAall** - plus three paste
+and Nexus Mods there are four more mod sites you can browse and install from
+without leaving the app - **GTAinside**, **GTA5Mod.net**, **GTA5 Mod Hub**
+and **GTAall** - plus three paste
 tiles: **Google Drive**, **GitHub releases** and **Direct link**. Click a
 tile to enter that store; the **‹ Stores** button brings you back. The Google
 Drive, GitHub and Direct-link tiles are different - they open a paste prompt
