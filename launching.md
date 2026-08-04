@@ -39,10 +39,17 @@ Launching vanilla skips it.
 
 While the game runs, the Launch button turns into ⏹ **Stop** - one click
 closes the game (and the Rockstar launcher if it's still open), just like
-Steam's Stop button. If Stop reports that it couldn't close the game, the
-game is running with higher privileges than Simple Mods Manager - start SMM
-as administrator (right-click → *Run as administrator*), or close the game
-from its own window.
+Steam's Stop button. Closing a game this size takes a few seconds, so Stop
+waits for it to finish rather than declaring failure while it is still on its
+way out. Close the game from its own window instead and the button goes back
+to 🚀 **Launch** on its own, from whichever screen you happen to be on.
+
+If Stop does report a problem it tells you which one it is. *"Still shutting
+down"* means the game was told to close and is taking its time - give it a
+moment. *"Running with higher privileges"* is the one where starting SMM as
+administrator (right-click → *Run as administrator*) actually helps. And if
+the game is genuinely wedged - usually a graphics-driver crash - nothing can
+close it and a reboot clears it.
 
 Anything that changes the **active** game folder - switching profiles, installing
 or uninstalling a mod, updating a dependency, or restoring a restore point - is

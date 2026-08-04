@@ -226,6 +226,12 @@ at vehicle X*, naming the exact vehicle (and for density runs, everything
 loaded at that moment). Each result row has a **📜 Log** button with the raw
 test trail behind the verdict.
 
+Results belong to the profile that made them: each profile shows only its own
+runs, and an ordinary launch never overwrites one. (Before, results were read
+straight out of the game folder, so every profile showed whichever test ran last
+whoever had actually run it - and with the developer bridge switched on an
+ordinary launch could even produce a "crashed" result for a test that never ran.)
+
 A result can also report **models the game never registered**. Those are
 vehicles the pack was supposed to deliver and the game has never heard of - so
 the test walked straight past them. This is shown even when the run passes,

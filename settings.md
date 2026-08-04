@@ -241,3 +241,43 @@ contributors, Simple Mods Loader Enhanced by NativeCoder, OpenIV, CodeWalker,
 and of course Rockstar's Grand Theft Auto V). The lists come straight from the
 app itself, so a newly added dependency shows up here automatically. This guide
 is always available from the **Docs** tab in the top bar.
+
+## Danger zone
+
+The last card on the Settings page, and the only one that can throw work away.
+Three actions, each of which explains exactly what it will remove before it does
+anything.
+
+**Restore my game.** Removes everything Simple Mods Manager put in your game
+folder and puts your original files back, so the game runs exactly as it did
+before you ever installed it - no loader, no mods, no changed launch options. A
+restore point is taken first. Your profiles are **kept**, so this is the one to
+reach for when you want a clean game for a while: install a profile again
+whenever you like and everything comes back.
+
+If a file that a mod replaced can't be put back - because the untouched original
+went missing at some point - it says so by name instead of quietly leaving it
+there. Verifying your game files through Steam or the Rockstar launcher fixes
+those.
+
+**Delete all Simple Mods Manager data.** Erases your profiles, the install queue,
+downloaded files and backups. Your settings, your API keys and the encryption
+keys learned from your game are **kept** - so you don't have to set the app up
+again or launch the game to re-learn its keys.
+
+This one asks you to **restore your game first**, and refuses until you have. The
+untouched copies of files your mods replaced are part of the data it would
+erase - delete them while mods are still installed and there would be no way to
+put your game back.
+
+**Reset everything.** Both of the above in one go, and then Simple Mods Manager
+closes. Open it again and it behaves like a fresh install, but with your settings
+and keys already in place. This also removes the Explorer icon registered for
+`.smmprofile` modpack files - though if you keep using the app it registers
+itself again next time it starts, which is correct: the icon describes an app
+that is still there.
+
+**Confirming.** The two that cannot be undone show you five random words and ask
+you to type them. You can't paste them - typing them is the point. Type them
+wrong and nothing happens at all. It is deliberately more effort than a button:
+these remove work you can't get back.

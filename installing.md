@@ -306,3 +306,13 @@ also ship their files under a `platform` folder, which is the game's own name fo
 part of `update.rpf`; Simple Mods Manager checks that against your real game
 files and, when it matches, places them for you. And re-installing or updating a mod never conflicts with its own
 earlier copy - Simple Mods Manager tracks what it installed.
+
+**A nudge to play after two mods.** Add two or more mods to a profile without
+playing in between and a bar appears across the top of the app, on every screen,
+suggesting a test run - with a **Launch to test** button on it. It is only ever a
+suggestion; nothing is blocked, and you can keep installing.
+
+The reason is worth a sentence: when a mod breaks the game, finding out which one
+is easy with two new mods and miserable with a dozen. The bar clears itself the
+moment you actually play - a real session, not a game that crashed on the loading
+screen, because that tested nothing.

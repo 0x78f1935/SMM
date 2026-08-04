@@ -16,6 +16,27 @@ starts are quick. It holds nothing of yours, and SMM now clears out the copies
 left by older versions every time it starts - that folder used to keep growing
 with every update.
 
+**How do I remove SMM completely and put my game back?**
+Settings has a Danger zone at the bottom with three options.
+
+Restore my game removes everything Simple Mods Manager put in your game folder
+and puts your original files back, so the game runs exactly as it did before.
+Your profiles are kept, so you can install them again whenever you like - this
+is the one to use when you just want a clean game for a while.
+
+Delete all data erases your profiles, downloads and backups but keeps your
+settings, your API keys and the encryption keys learned from your game. It asks
+you to restore your game first and refuses until you have: the untouched copies
+of files your mods replaced are part of the data it would erase, so afterwards
+there would be no way to put your game back.
+
+Reset everything does both and then closes the app. After that you can simply
+delete the program and its data folder - nothing of SMM's is left anywhere else
+on your machine.
+
+The two that cannot be undone show you five random words and ask you to type
+them. You cannot paste them; that is the point.
+
 **How do I share a profile with a friend?**
 Open the profile and press **Export**. That writes a single `.smmprofile` file
 - a **recipe** of your profile: which mods it uses and where they came from,
