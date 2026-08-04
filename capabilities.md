@@ -65,7 +65,13 @@ here than discover them mid-game.
   exception: rebuilt every launch, never game content.)
 - **Raises the game's limits to match what you install.** Install enough add-on
   content and the game's own configuration would overflow and crash on load -
-  SMM scales those limits to what is actually installed, every launch.
+  SMM scales those limits to what is actually installed, every launch. That
+  includes one the game hides: script mods share a small fixed list of "handles"
+  for referring to cars, people and objects, and the game ships it far too short
+  for a scripted profile - one mod asking what is nearby can want more than the
+  whole list holds, and once it runs out, *other* mods start failing quietly
+  rather than crashing. SMM sizes that list for you whenever a profile has
+  script mods in it.
 - **Scans every download.** Files are checked with Microsoft Defender before
   they are unpacked, whether they come from a store tile, a GitHub release, a
   direct link or your Downloads folder. A flagged file is removed and never

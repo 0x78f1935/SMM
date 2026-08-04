@@ -17,7 +17,7 @@ left by older versions every time it starts - that folder used to keep growing
 with every update.
 
 **How do I remove SMM completely and put my game back?**
-Settings has a Danger zone at the bottom with three options.
+Settings has a Danger zone near the bottom with three options.
 
 Restore my game removes everything Simple Mods Manager put in your game folder
 and puts your original files back, so the game runs exactly as it did before.

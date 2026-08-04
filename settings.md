@@ -183,10 +183,10 @@ next time a profile needs it.
 
 ## Development
 
-The last card before **About & credits** holds the three switches that exist for
-*building* Simple Mods Manager and for reporting bugs against it. None of them
-change how the game plays, and all three are off by default - if you're not
-chasing a problem, there's nothing here for you.
+The last of the everyday cards holds the three switches that exist for *building*
+Simple Mods Manager and for reporting bugs against it. None of them change how the
+game plays, and all three are off by default - if you're not chasing a problem,
+there's nothing here for you.
 
 **Install debug files.** Mods sometimes ship `.pdb` debug symbol files that do
 nothing at runtime; Simple Mods Manager skips them unless you turn this on (useful
@@ -244,9 +244,9 @@ is always available from the **Docs** tab in the top bar.
 
 ## Danger zone
 
-The last card on the Settings page, and the only one that can throw work away.
-Three actions, each of which explains exactly what it will remove before it does
-anything.
+Below the everyday settings, just above **About & credits**, and the only card
+that can throw work away. Three actions, each of which explains exactly what it
+will remove before it does anything.
 
 **Restore my game.** Removes everything Simple Mods Manager put in your game
 folder and puts your original files back, so the game runs exactly as it did
