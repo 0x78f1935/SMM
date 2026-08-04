@@ -73,6 +73,17 @@ is left out of the install (everything else still installs). Often SMM reads
 the destination straight from the mod's instructions and places it for you, so
 the box stays empty.
 
+SMM also checks the file's **name** against your game. Plenty of texture and prop
+mods are just the file, with no folders around them and no instructions worth
+following - but if the name belongs to exactly one file in the game, that is the
+file being replaced, and SMM places it there. When the name isn't unique it asks
+instead of guessing, so the box is still there when it's genuinely needed.
+
+**Optional extras.** When a mod keeps something in a folder it calls *Manual
+installation*, *Optional* or *Alternative*, and its notes say which file those
+extras belong in, they appear on the Install step **switched off**. They're the
+author's alternative route, not the main install - tick them if you want them.
+
 **Choose a variant.** Some mods ship several copies of the same file for you to
 pick between - the classic **low / medium / large** versions of a map's `.ytyp`,
 for instance - where you're meant to drop one *into* the mod's `dlc.rpf`. SMM
@@ -283,8 +294,10 @@ so files a mod's author says to drop in a specific place end up exactly
 there. That includes the way such packages write a location -
 `Mods / update / update.rpf / x64 / data / metadata`, spaces and all - and
 readmes tucked away in a wrapper folder beside the actual mod files, readmes
-written as a **web page** rather than plain text, and destinations written on
-their own line under a colon. If a mod's readme turns out to be nothing but a
+written as a **web page** rather than plain text, destinations written on
+their own line under a colon, and instructions laid out as **numbered steps** -
+"1. go to this folder … 3. replace this file" - where the folder and the file are
+several lines apart. If a mod's readme turns out to be nothing but a
 link to the author's documentation site, Simple Mods Manager follows that link
 once to read the instructions there - it only does so when the shipped readme
 says nothing itself, and if the site can't be reached the install simply carries

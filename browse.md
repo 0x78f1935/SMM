@@ -37,9 +37,14 @@ real page navigator (also on the featured page) and filters that run on the
 site itself: **Category**, **Sort**, **Uploaded** (yesterday / last week /
 last month) and a free-text **Tag** (e.g. `trainer`, `.net`, `car` -
 capitalization and spaces don't matter, "Rage Plugin Hook" works).
+Switching to another store starts it clean: the search box and the filters
+belong to the store you typed them in, so you get the new store's own listing
+rather than the last one's query carried over.
 Click a mod to open its **full detail page** - a large preview, the complete
 description, and version/profile pickers, with **Download & Install** and
-**📥 Add to queue** on a rail that stays in view as you read. Or skip the page
+**📥 Add to queue** on a rail that stays in view as you read. Your mouse's
+**back button** works here too - it steps back through mods you opened from
+another mod's description, then returns to the results. Or skip the page
 entirely: every result card has its own **📥 Queue** and **Install** buttons, so
 you can add a mod straight from the grid. Either way the wizard opens at the
 right step if anything conflicts. A card you've already queued is marked with a
@@ -182,7 +187,10 @@ Settings, visible on every view) counts what is waiting and pulses while
 something is still running; click it to slide out the **queue & activity
 drawer**. Its top section lists the background work: each running download
 with a live progress bar and a ✕ to cancel it, finished ones with their
-result, and a *Clear finished* to tidy up. Below that sits the install
+result, and a *Clear finished* to tidy up. Press ✕ and the row says
+**Cancelling…** right away - a download that is already unpacking or being
+virus-scanned takes a moment longer to stop, and you can see that it is
+stopping rather than wondering whether the button did anything. Below that sits the install
 queue itself - every queued mod listed, each with a ✕
 to drop it and a link back to its source. **Install queued mods »** hands the
 whole set to the wizard, where you walk the usual Conflicts → Install steps
