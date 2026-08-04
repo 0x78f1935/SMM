@@ -101,6 +101,14 @@ by default - SMM pre-selects the first preset and you change it if you want
 another. Switching the dropdown swaps the file immediately, so the list below
 always shows the preset you'll actually get.
 
+SMM is careful about *when* it offers this. Big script mods keep their own folder
+tree of settings - one folder per garage, per character, per business - and those
+folders are addresses the mod reads by name, not alternatives to choose between.
+Offering them as a preset used to install one and lose the rest, which took the
+mod down the moment it looked for a folder that wasn't there. So a preset box only
+appears for folders sitting directly in `scripts/`, and never when the mod's own
+files show that the folder is somewhere it genuinely reads from.
+
 And it handles the bluntest case too: **one mod, several copies of the same file**.
 *Faster Trains* ships four `traintracks.xml` in folders called `backup speed`,
 `x2 speed`, `x3 speed` and `x4 speed` - all going to the same place, so only one can
