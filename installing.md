@@ -24,16 +24,21 @@ game folder. Both are easy to end up scanning by accident - the data folder sits
 next to the program, so keeping the program *in* your downloads folder puts it
 right in the middle of everything being scanned - and neither one is a mod.
 
-**The scan is quick, and it takes you straight to the file list.** All it works
-out is what each mod contains and where every file belongs - it doesn't open the
-files themselves. When it finishes you land on the **Install** step, looking at
-the list of files with a tick box beside each one. (If any files clash, you get
+**The scan is quick, and it takes you straight to the file list.** It reads the
+*list* of files inside each download without unpacking it, works out where each
+one belongs, and shows you the result - usually in well under a second, even for
+very large downloads. When it finishes you land on the **Install** step, looking
+at the list of files with a tick box beside each one. (If any files clash, you get
 the **Conflicts** step first, since only you can decide those.)
 
-The heavier work - unpacking, converting and checking the files themselves -
-happens when you press **Install**, so it is only ever done for the files you
-actually keep ticked. Some large texture and sound packs need several minutes of
-that; leave one unticked and none of it runs.
+The heavy work - unpacking, converting and checking the files themselves - happens
+when you press **Install**, and only for the files you keep ticked. Leave a large
+texture or sound pack unticked and it is never unpacked at all.
+
+**Downloads that aren't mods are left alone.** A downloads folder usually has other
+things in it. Anything with no game content in it at all is recognised from its file
+list and skipped, with a note in the scan results saying why - it is never unpacked,
+and never appears in the install list.
 
 **Choose exactly what installs.** The Install step groups the plan by folder,
 with a checkbox on every file and every folder. Untick anything you don't want
