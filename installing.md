@@ -35,6 +35,16 @@ The heavy work - unpacking, converting and checking the files themselves - happe
 when you press **Install**, and only for the files you keep ticked. Leave a large
 texture or sound pack unticked and it is never unpacked at all.
 
+**Choose which downloads go forward.** Every download the scan found has a tick box
+beside it, with **Select all** and **Select none** above the list. Untick one and it
+takes no part in the rest of the install: it isn't checked for clashes, it doesn't
+appear on the Install step, and it is never unpacked. Nothing is deleted, so you can
+tick it again later without scanning again, and your choice is remembered if you
+close the app.
+
+That's the *first* choice - which downloads you actually meant. Choosing individual
+**files** comes later, on the Install step.
+
 **Downloads that aren't mods are left alone.** A downloads folder usually has other
 things in it. Anything with no game content in it at all is recognised from its file
 list and skipped, with a note in the scan results saying why - it is never unpacked,
