@@ -100,6 +100,20 @@ and warnings and errors carry a **symbol** as well as their colour. The
 colourblind palette makes that easier still, but the app is readable without
 it.
 
+**Graphics card.** Which card Simple Mods Manager's own in-game parts use. The
+dropdown lists the cards found in your PC, with how much memory each one has, so
+a laptop's built-in chip is easy to tell apart from the fast one. Leave it on
+**Automatic** - which picks the fastest card - unless your game starts on the
+wrong one. It takes effect the next time you launch.
+
+This does **not** change the game's own graphics settings, and it is not a
+performance switch. It exists because on laptops with two graphics chips the
+in-game parts used to ask for whichever chip the screen is wired to, and that
+could pull the whole game onto the slower built-in one. Windows has its own
+per-game preference under *Settings → System → Display → Graphics*, and your
+graphics driver has one too; if a game is on the wrong card, those are worth
+checking as well.
+
 **Profile order.** How your profiles are listed everywhere - the dashboard grid,
 the profile picker at the top, the launch menu and the wizard's *Install into*.
 Choose *last played first* (the default), *name A → Z* or *name Z → A*. The

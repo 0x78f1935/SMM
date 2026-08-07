@@ -224,6 +224,22 @@ automatically on the next start.
 
 ## When things go wrong
 
+**The game runs on my laptop's built-in graphics chip.**
+Up to version 1.24.1 this could genuinely be Simple Mods Manager's fault. The
+part of it that runs inside the game asked Windows for *"the default"* graphics
+chip, and on a laptop that is normally the slower built-in one, because that is
+what the screen is wired to. Asking first was enough to pull the whole game onto
+it. From 1.25.0 it asks for the fastest card instead.
+
+If it still happens, open **Settings** and pick your card under **Graphics
+card**, then launch again. It is worth checking Windows too: **Settings → System
+→ Display → Graphics** lets you set a preference per game, and your graphics
+driver has its own panel for the same thing.
+
+Note that Simple Mods Manager never changes the game's own graphics settings - it
+only ever turns frame generation off for a modded profile, because that clashes
+with the custom loading screen.
+
 **The game crashes on startup after installing mods.**
 Open the profile and check the hard-dependencies panel: an **amber** row means
 files are missing, and any row offering **Update** or **Repair** is one click
