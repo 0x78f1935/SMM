@@ -107,7 +107,9 @@ loaded into a game, which is exactly the shape a virus scanner is built to be
 suspicious of. This tells Defender to leave the game folder alone.
 
 Simple Mods Manager offers this by itself the first time it learns your game's
-encryption keys, and this row is how you change it afterwards. Windows asks for
+encryption keys - and it checks whether you have already set one up yourself first,
+so it does not ask people who are already sorted. This row is how you change it
+afterwards. It is also **required before you can create a profile**. Windows asks for
 administrator permission every time - there is no way around that, and declining is
 fine, nothing else changes.
 

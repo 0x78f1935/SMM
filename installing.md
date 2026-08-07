@@ -35,6 +35,14 @@ The heavy work - unpacking, converting and checking the files themselves - happe
 when you press **Install**, and only for the files you keep ticked. Leave a large
 texture or sound pack unticked and it is never unpacked at all.
 
+**Before your first profile.** Simple Mods Manager needs two things in place, and
+both are settled by the same one-time launch: your game's **encryption keys** (read
+from your own running game - add-on packs need them) and **Windows Defender set to
+skip your game folder** (otherwise it deletes mod files it mistakes for threats,
+after you have built the profile). If either is missing, creating a profile says so
+and offers to sort it. If Defender is switched off, or another antivirus is in
+charge, nothing is asked.
+
 **Choose which downloads go forward.** Every download the scan found has a tick box
 beside it, with **Select all** and **Select none** above the list. Untick one and it
 takes no part in the rest of the install: it isn't checked for clashes, it doesn't
@@ -49,6 +57,18 @@ That's the *first* choice - which downloads you actually meant. Choosing individ
 things in it. Anything with no game content in it at all is recognised from its file
 list and skipped, with a note in the scan results saying why - it is never unpacked,
 and never appears in the install list.
+
+**Notes are sorted by how much they matter.** Anything that blocks a file, or needs
+a decision from you, is shown on the card. The much longer list of *"here is what
+Simple Mods Manager adjusted"* notes - converted textures, repaired files, stock
+copies used - folds away behind a count; open it any time you want to see exactly
+what was done. Repeats are merged, so a mod that adjusted twenty files says so once
+with all twenty lines inside it.
+
+Nothing is hidden: everything Simple Mods Manager skips or refuses is still
+reported. Purely technical notes aimed at the mod's author (a broken install map, an
+installer instruction we don't recognise) go to the log instead of the install
+screen.
 
 **Choose exactly what installs.** The Install step groups the plan by folder,
 with a checkbox on every file and every folder. Untick anything you don't want
