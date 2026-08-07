@@ -100,6 +100,28 @@ and warnings and errors carry a **symbol** as well as their colour. The
 colourblind palette makes that easier still, but the app is readable without
 it.
 
+**Let Windows Defender skip the game folder.** Defender scans every file the game
+loads. That slows launches down, and it sometimes deletes mod files outright after
+mistaking them for threats - a script mod is, structurally, an unsigned program being
+loaded into a game, which is exactly the shape a virus scanner is built to be
+suspicious of. This tells Defender to leave the game folder alone.
+
+Simple Mods Manager offers this by itself the first time it learns your game's
+encryption keys, and this row is how you change it afterwards. Windows asks for
+administrator permission every time - there is no way around that, and declining is
+fine, nothing else changes.
+
+It only ever removes the exclusion **it** added, never one you set up yourself, and
+*Put my game back* in the Danger zone removes it for you. Only the game folder is
+ever excluded: your downloads folder is not, because Simple Mods Manager
+deliberately scans downloads before unpacking them.
+
+One quirk worth knowing: Windows will not tell an ordinary program which folders are
+excluded, so if you added an exclusion yourself the switch shows **off** even though
+Defender is already skipping the folder. Press **Check Windows** to ask properly -
+that needs administrator permission too, which is why it is a button rather than
+something that happens every time you open this page.
+
 **Graphics card.** Which card Simple Mods Manager's own in-game parts use. The
 dropdown lists the cards found in your PC, with how much memory each one has, so
 a laptop's built-in chip is easy to tell apart from the fast one. Leave it on
