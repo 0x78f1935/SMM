@@ -255,7 +255,16 @@ spot), everything else opens in your browser.
 Some mods ship files for both GTA V generations in one download (a *Legacy*
 folder and an *Enhanced* folder). Simple Mods Manager manages GTA V Enhanced,
 so it automatically installs the Enhanced files and skips the Legacy ones -
-the mod card tells you when that happened.
+the mod card tells you when that happened. This also covers the common packaging
+where the mod's files sit loose in the download and only the Enhanced build is in
+a folder (named `EnhancedVersion`, `Enhanced Version` or similar) - the loose
+files are the Legacy ones, and they are skipped.
+
+**When a mod offers the same file in more than one style**, you get a picker
+instead of a pile. Some mods include one replacement twice - a standard version
+and an alternative look, often in a folder next to it. Both replace the same game
+file, so only one can be installed; the mod's main version is chosen for you and
+the alternatives are listed beside it on the Install step.
 
 **Legacy textures are upgraded automatically.** GTA V Enhanced ignores textures
 saved in the old Legacy format, so a Legacy texture mod would otherwise show
